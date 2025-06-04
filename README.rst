@@ -1,12 +1,12 @@
 .. start-no-pypi
-.. image:: https://github.com/labd/django-cognito-jwt/workflows/Python%20Tests/badge.svg
-    :target: https://github.com/labd/django-cognito-jwt/workflows/Python%20Tests/
+.. image:: https://github.com/bekindsoft/django-cognito-jwt/workflows/Python%20Tests/badge.svg
+    :target: https://github.com/bekindsoft/django-cognito-jwt2/workflows/Python%20Tests/
 
 .. image:: http://codecov.io/github/LabD/django-cognito-jwt/coverage.svg?branch=master
-    :target: http://codecov.io/github/LabD/django-cognito-jwt?branch=master
+    :target: http://codecov.io/github/bekindsoft/django-cognito-jwt2?branch=master
 
 .. image:: https://img.shields.io/pypi/v/django-cognito-jwt.svg
-    :target: https://pypi.python.org/pypi/django-cognito-jwt/
+    :target: https://pypi.python.org/pypi/django-cognito-jwt2/
 
 .. image:: https://readthedocs.org/projects/django-cognito-jwt/badge/?version=latest
     :target: https://django-cognito-jwt.readthedocs.io/en/latest/?badge=latest
@@ -25,7 +25,7 @@ Installation
 
 .. code-block:: shell
 
-   pip install django-cognito-jwt
+   pip install django-cognito-jwt2
 
 Usage
 =====
