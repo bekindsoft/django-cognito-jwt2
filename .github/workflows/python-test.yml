@@ -75,7 +75,6 @@ jobs:
     - uses: actions/download-artifact@v4
       with:
         pattern: coverage-data-*
-        path: .
         merge-multiple: true
     - name: Install dependencies
       run: |
