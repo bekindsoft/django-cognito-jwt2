@@ -82,5 +82,7 @@ jobs:
         pip install tox tox-gh-actions coverage[toml]
     - name: Prepare Coverage report
       run: tox -e coverage-report
-    - name: Upload to codecov
-      uses: codecov/codecov-action@v1.0.6
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v5
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
