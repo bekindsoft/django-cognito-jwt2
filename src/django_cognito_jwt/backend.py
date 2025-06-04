@@ -6,6 +6,7 @@ from django.utils.encoding import force_str
 from django.utils.translation import gettext as _
 from rest_framework import exceptions
 from rest_framework.authentication import BaseAuthentication, get_authorization_header
+from ninja.security import HttpBearer
 
 from django_cognito_jwt.validator import TokenError, TokenValidator
 
@@ -66,3 +67,40 @@ class JSONWebTokenAuthentication(BaseAuthentication):
         More details in https://www.django-rest-framework.org/api-guide/authentication/#custom-authentication.
         """
         return "Bearer: api"
+
+
+class InvalidToken(Exception):
+    pass
+
+
+class AuthenticationFailed(Exception):
+    pass
+
+
+class NinjaJSONWebTokenAuthentication(HttpBearer):
+    """Token based authentication using the JSON Web Token standard."""
+
+    def authenticate(self, request, jwt_token: str):
+        """Entrypoint for Django Rest Framework"""
+        # Authenticate token
+        try:
+            token_validator = self.get_token_validator(request)
+            jwt_payload = token_validator.validate(jwt_token)
+        except TokenError:
+            raise AuthenticationFailed()
+
+        USER_MODEL = self.get_user_model()
+        user = USER_MODEL.objects.get_or_create_for_cognito(jwt_payload)
+        return user
+
+    def get_user_model(self):
+        user_model = getattr(settings, "COGNITO_USER_MODEL", settings.AUTH_USER_MODEL)
+        return django_apps.get_model(user_model, require_ready=False)
+
+    def get_token_validator(self, request):
+        return TokenValidator(
+            settings.COGNITO_AWS_REGION,
+            settings.COGNITO_USER_POOL,
+            settings.COGNITO_AUDIENCE,
+        )
+

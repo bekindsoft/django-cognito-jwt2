@@ -6,6 +6,7 @@ install_requires = [
     "djangorestframework",
     "pyjwt",
     "requests",
+    "django-ninja>=1.0.0",
 ]
 
 docs_require = [
