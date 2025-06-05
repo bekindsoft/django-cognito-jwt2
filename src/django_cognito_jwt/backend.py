@@ -4,9 +4,9 @@ from django.apps import apps as django_apps
 from django.conf import settings
 from django.utils.encoding import force_str
 from django.utils.translation import gettext as _
+from ninja.security import HttpBearer
 from rest_framework import exceptions
 from rest_framework.authentication import BaseAuthentication, get_authorization_header
-from ninja.security import HttpBearer
 
 from django_cognito_jwt.validator import TokenError, TokenValidator
 
@@ -103,4 +103,3 @@ class NinjaJSONWebTokenAuthentication(HttpBearer):
             settings.COGNITO_USER_POOL,
             settings.COGNITO_AUDIENCE,
         )
-
