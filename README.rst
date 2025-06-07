@@ -5,7 +5,7 @@
 .. image:: http://codecov.io/github/LabD/django-cognito-jwt/coverage.svg?branch=master
     :target: http://codecov.io/github/bekindsoft/django-cognito-jwt2?branch=master
 
-.. image:: https://img.shields.io/pypi/v/django-cognito-jwt.svg
+.. image:: https://img.shields.io/pypi/v/django-cognito-jwt2.svg
     :target: https://pypi.python.org/pypi/django-cognito-jwt2/
 
 .. image:: https://readthedocs.org/projects/django-cognito-jwt/badge/?version=latest
