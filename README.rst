@@ -1,5 +1,5 @@
 .. start-no-pypi
-.. image:: https://github.com/bekindsoft/django-cognito-jwt/workflows/Python%20Tests/badge.svg
+.. image:: https://github.com/bekindsoft/django-cognito-jwt2/workflows/Python%20Tests/badge.svg
     :target: https://github.com/bekindsoft/django-cognito-jwt2/workflows/Python%20Tests/
 
 .. image:: http://codecov.io/github/LabD/django-cognito-jwt/coverage.svg?branch=master
