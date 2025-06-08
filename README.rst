@@ -15,7 +15,7 @@
 
 
 Django Cognito JWT2
-==================
+===================
 
 An Authentication backend for Django Rest Framework for AWS Cognito JWT tokens
 
