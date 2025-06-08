@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# django-cognito-jwt documentation build configuration file, created by
+# django-cognito-jwt2 documentation build configuration file, created by
 # sphinx-quickstart on Wed Aug 10 17:06:14 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -48,7 +48,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'django-cognito-jwt'
+project = u'django-cognito-jwt2'
 copyright = u'Y, Michael van Tellingen'
 author = u'Michael van Tellingen'
 
@@ -127,7 +127,7 @@ html_theme = 'alabaster'
 html_theme_options = {
     'github_user': 'LabD',
     'github_banner': True,
-    'github_repo': 'django-cognito-jwt',
+    'github_repo': 'django-cognito-jwt2',
     'travis_button': True,
     'codecov_button': True,
     'analytics_id': 'UA-75907833-X',
@@ -139,7 +139,7 @@ html_theme_options = {
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = u'django-cognito-jwt v0.1.0'
+# html_title = u'django-cognito-jwt2 v0.1.0'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -246,7 +246,7 @@ html_sidebars = {
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'django_cognito_jwt-doc'
+htmlhelp_basename = 'django_cognito_jwt2-doc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -272,7 +272,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'django_cognito_jwt.tex', u'django-cognito-jwt Documentation',
+    (master_doc, 'django_cognito_jwt2.tex', u'django-cognito-jwt2 Documentation',
      u'Michael van Tellingen', 'manual'),
 ]
 
@@ -314,7 +314,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'django_cognito_jwt', u'django-cognito-jwt Documentation',
+    (master_doc, 'django_cognito_jwt2', u'django-cognito-jwt2 Documentation',
      [author], 1)
 ]
 
@@ -329,8 +329,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'django_cognito_jwt', u'django-cognito-jwt Documentation',
-     author, 'django_cognito_jwt', 'One line description of project.',
+    (master_doc, 'django_cognito_jwt2', u'django-cognito-jwt2 Documentation',
+     author, 'django_cognito_jwt2', 'One line description of project.',
      'Miscellaneous'),
 ]
 

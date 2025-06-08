@@ -3,7 +3,7 @@ from ninja import NinjaAPI
 from rest_framework.decorators import api_view, authentication_classes
 from rest_framework.response import Response
 
-from django_cognito_jwt import (
+from django_cognito_jwt2 import (
     JSONWebTokenAuthentication,
     NinjaJSONWebTokenAuthentication,
 )

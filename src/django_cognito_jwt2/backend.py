@@ -8,7 +8,7 @@ from ninja.security import HttpBearer
 from rest_framework import exceptions
 from rest_framework.authentication import BaseAuthentication, get_authorization_header
 
-from django_cognito_jwt.validator import TokenError, TokenValidator
+from .validator import TokenError, TokenValidator
 
 logger = logging.getLogger(__name__)
 
