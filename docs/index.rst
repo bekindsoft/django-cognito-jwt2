@@ -8,7 +8,7 @@ Installation
 
 .. code-block:: shell
 
-   pip install django-cognito-jwt
+   pip install django-cognito-jwt2
 
 Usage
 =====
@@ -37,7 +37,7 @@ Also update the rest framework settings to use the correct authentication backen
     REST_FRAMEWORK = {
         'DEFAULT_AUTHENTICATION_CLASSES': [
             ...
-            'django_cognito_jwt.JSONWebTokenAuthentication',
+            'django_cognito_jwt2.JSONWebTokenAuthentication',
             ...
         ],
         ...

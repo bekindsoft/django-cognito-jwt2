@@ -9,12 +9,12 @@
     :target: https://pypi.python.org/pypi/django-cognito-jwt2/
 
 .. image:: https://readthedocs.org/projects/django-cognito-jwt/badge/?version=latest
-    :target: https://django-cognito-jwt.readthedocs.io/en/latest/?badge=latest
+    :target: https://django-cognito-jwt2.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 .. end-no-pypi
 
 
-Django Cognito JWT
+Django Cognito JWT2
 ==================
 
 An Authentication backend for Django Rest Framework for AWS Cognito JWT tokens
@@ -54,7 +54,7 @@ Also update the rest framework settings to use the correct authentication backen
     REST_FRAMEWORK = {
         'DEFAULT_AUTHENTICATION_CLASSES': [
             ...
-            'django_cognito_jwt.JSONWebTokenAuthentication',
+            'django_cognito_jwt2.JSONWebTokenAuthentication',
             ...
         ],
         ...

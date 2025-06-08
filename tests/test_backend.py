@@ -6,8 +6,10 @@ from rest_framework import status
 from rest_framework.exceptions import AuthenticationFailed
 from utils import create_jwt_token
 
-from django_cognito_jwt import backend
-from django_cognito_jwt.backend import AuthenticationFailed as NinjaAuthenticationFailed
+from django_cognito_jwt2 import backend
+from django_cognito_jwt2.backend import (
+    AuthenticationFailed as NinjaAuthenticationFailed,
+)
 
 USER_MODEL = get_user_model()
 
